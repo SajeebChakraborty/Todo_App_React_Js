@@ -1,4 +1,5 @@
 import React from 'react'
+import NewTodo from './NewTodo';
 import Todos from './Todos';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <div>
 
+      <NewTodo/>
       <Todos todos={todos}/>
 
     </div>
