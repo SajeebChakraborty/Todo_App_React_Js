@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function NewTodo() {
+export default function NewTodo(props) {
 
   const [todo,setTodo]=useState("");
 
@@ -15,9 +15,9 @@ export default function NewTodo() {
 
   const addTodoSubmit=(e)=>{
 
-    console.log(todo);
-    e.preventDefault();
-    
+    e.preventDefault()
+    props.onTodo(todo)
+   
 
   }
 
